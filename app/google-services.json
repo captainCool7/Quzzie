@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "927677661881",
+    "project_id": "quzzie-a027d",
+    "storage_bucket": "quzzie-a027d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927677661881:android:eea371287c1bc8d1e19168",
+        "android_client_info": {
+          "package_name": "com.example.quzzie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927677661881-en4dj8o25raslrlpka085vh0b4eh19cm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFYLM1wDADO3qTgXeshYw_qVUERHgvXnE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927677661881-en4dj8o25raslrlpka085vh0b4eh19cm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
