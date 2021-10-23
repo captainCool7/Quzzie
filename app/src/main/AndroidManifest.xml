@@ -10,10 +10,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Quzzie">
+        android:theme="@style/Theme.Questions">
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ResultActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.QuestionActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.Quzzie" />
         <activity
             android:name=".activities.LoginIntro"
             android:exported="true">

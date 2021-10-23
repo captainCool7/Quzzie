@@ -1,6 +1,7 @@
 package com.example.quzzie.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quzzie.R
+import com.example.quzzie.activities.QuestionActivity
 import com.example.quzzie.models.Quiz
 import com.example.quzzie.utils.ColorPicker
 import com.example.quzzie.utils.IconPicker
@@ -28,7 +30,9 @@ class QuizAdapter(val context: Context, val quizzes: List<Quiz>): RecyclerView.A
         holder.cardContainer.setBackgroundColor(Color.parseColor(ColorPicker.getColor()))
         holder.imgView.setImageResource(IconPicker.getIcon())
         holder.itemView.setOnClickListener {
-            Toast.makeText(context,quizzes[position].title,Toast.LENGTH_SHORT).show()
+            val intent = Intent(context,QuestionActivity::class.java)
+            intent.putExtra("Date",quizzes[position].title)
+            context.startActivity(intent)
         }
     }
 
